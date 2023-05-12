@@ -3,6 +3,7 @@
 <head>
     <title>Vancity Custom Creations</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/965899ca78.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -10,23 +11,26 @@
         <img id="logo" src="images/logo.png" alt="Logo">
         <div id="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-cake-candles"></i>Products</a></li>
+                <li><a class="active" href="contact.html"><i class="fa-solid fa-envelope"></i>Contact</a></li>
             </ul>
         </div>
     </div>
-
+   
+    <div id="bg-img">
     <div id="container">
+     
         <form action="https://formspree.io/f/moqzbjbd" method="POST">
             <h2>Get in touch</h2>
             <input type="text" name="name" placeholder="Your Name"required autofocus>
             <input type="email" name="email" placeholder="Your Email"  required>
             <input type="text" name="Number" placeholder="Phone Number" required>
             <textarea id="message" placeholder="How can we help you?" rows="5"  name="message" required></textarea>
-            <button type="submit">Send</button>
+            <button id="button"type="submit">Send</button>
         </form>
     </div>
+    
 
 </body>
 

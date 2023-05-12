@@ -75,29 +75,53 @@ body {
    color: white;
 }
 
-#container{
-width: 100%;
-height: 100vh;
-background: white;
-align-items: center;
-justify-content: center;
-}
-form{
- 
+#bg-img {
+      background-image: url("images/contact.jpg");
+     width: 100%;
+     height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 50%;
+  
+  }
+  #container {
     display: flex;
-    flex-direction: column;
-    padding: 2vw 4vw;
-    width: 90%;
-    border-radius: 10px;
-    max-width: 600px;
-}
-form input textarea{
-    border: 0;
-    margin: 10px 0;
-    padding: 20px;
-    outline: none;
-    background: whitesmoke ;
-    font-size: 16px;
-}
-
-
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+     #button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 20%;
+        font-size: 18px;
+      }
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: white;
+        font-size: 25px;
+        padding:80px;
+        margin:80px;
+        display: list-item;
+      }
+      
+      form input,
+      form textarea {
+        flex: 1;
+        margin-right: 10px;
+      }
+      
+      form textarea {
+        flex-basis: 100%;
+      }
+      
