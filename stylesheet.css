@@ -5,22 +5,24 @@ html {
 }
 
 #header {
- padding-top: 10px;
+  position: absolute;
+  padding-top: 10px;
   justify-content: space-between;
   display: flex;
   align-items: center;
   width: 100%;
-  position: fixed;
 }
 
 #logo {
-  position: fixed;
   width: 25%;
   height: 25%;
-  padding-top: 11%;
   mix-blend-mode: color-burn;
   object-fit: contain;
   opacity: 60%;
+}
+
+.icons {
+  display: flex;
 }
 
 .icons #menu-bars {
